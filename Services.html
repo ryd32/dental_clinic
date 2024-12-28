@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Dental Clinic</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link href="assets/img/favicon.jpg" rel="icon" />
+    <link href="assets/img/favicon.jpg" rel="apple-touch-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    
+  
+    
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+
+
+<style>
+
+
+
+
+
+
+
+/* Testimonials Section */
+.testimonials {
+  padding: 2rem;
+  background-color: #eceff1;
+  text-align: center;
+}
+
+.testimonial {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+
+
+
+
+33333333333
+
+/* Services Header */
+.services-header {
+  background: url("img/Image3.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.services-header-content h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.services-header-content p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* Services List */
+.service-list {
+  padding: 3rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.service-list h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #0277bd;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 28px;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #0288d1;
+}
+
+.service-card p {
+  font-size: 1rem;
+  padding: 0 1rem 1rem;
+  color: #666;
+}
+
+.service-card img {
+  width: 33%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/welcome++++++++++++++++++++++++++++++++++++
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+
+
+
+
+/* Footer */
+footer {
+  padding: 1rem;
+  background-color: #0288d1;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  color: #ffd600;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+/* Services Header */
+.services-header {
+  background: url("img/white-healthy.jpg") no-repeat center center/cover;
+  color: black;
+  text-align: center;
+  padding: 7rem 1rem;
+}
+
+.services-header-content h2 {
+  font-size: 5.5rem;
+  margin-bottom: 5rem;
+}
+
+.services-header-content p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Call-to-Action Section                READY TO */
+.cta {
+  padding: 3rem;
+  text-align: center;
+  background-color: #e3f2fd;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #0288d1;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.btn-primary {
+  padding: 1rem 2rem;
+  background-color: #043959;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styles */
+.footer {
+  background-color: #043959;lightcyan
+
+  padding: 2rem 0;
+  color: #fff;
+}
+
+.footer-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.footer-info,
+.footer-links,
+.footer-contact,
+.footer-social {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-info h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.footer-info p {
+  font-size: 1rem;
+  color: #eee;
+}
+
+.footer-links h4,
+.footer-contact h4,
+.footer-social h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-links a,
+.footer-social a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  color: #007bff;
+}
+
+.footer-social ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-social i {
+  font-size: 1.5rem;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.footer-social i:hover {
+  color: #0056b3;
+}
+
+.footer-contact p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.footer-contact i {
+  margin-right: 0.5rem;
+}
+
+
+</style>
+
+
+
+
+  </head>
+  <body>
+
+
+    <!-- ======= Top Bar ======= -->
+    <div id="topbar" class="d-flex align-items-center fixed-top">
+      <div
+        class="container d-flex align-items-center justify-content-center justify-content-md-between"
+      >
+        <div class="align-items-center d-none d-md-flex">
+          <i class="bi bi-clock"></i> Saturday - thursday, 8AM to 5PM
+        </div>
+        <div class="d-flex align-items-center">
+          <i class="bi bi-phone"></i> Call us now 025275481
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Header ======= -->
+
+
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+        <a href="index.html" class="logo me-auto"
+          ><img src="assets/img/MergedImages.png" alt=""
+        /></a>
+
+
+
+        <!-- Uncomment below if you prefer to use an image logo -->
+
+        <!-- <h1 class="logo me-auto"><a href="index.html"></a></h1> -->
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+            <li><a class="nav-link scrollto" href="Services.html">Services</a></li>
+            <li><a class="nav-link scrollto" href="#about">About US</a></li>
+            
+           
+            
+            <li><a class="nav-link scrollto" href="contact.html">Contact US</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+
+        <a href="appointments.html" class="appointment-btn scrollto1"
+          ><span class="d-none d-md-inline">Make an Appointment</span> </a
+        >
+  <a href="http://localhost/login/" class="appointment-btn scrollto2 "
+          ><span class="d-none d-md-inline">Connexion</span></a
+        >
+      </div>
+
+    </header>
+
+    <!-- End Header -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </head>
+  
+
+    
+      <section class="services-header">
+        <div class="services-header-content">
+          <h2>Our Services</h2>
+         
+        </div>
+      </section>
+
+      <section class="service-list">
+<div class="services-header-content">
+          <h2>Our Services</h2>
+          <p>Comprehensive dental care tailored to your needs and comfort.</p>
+        </div>
+        <h2>Explore Our Dental Solutions</h2>
+        <div class="service-cards">
+
+
+          <div class="service-card">
+            <img src="svg/happy tooth.svg" alt="Teeth Whitening" />
+
+            <h3>Teeth Whitening</h3>
+            <p>Brighten your smile with advanced teeth whitening treatments.</p>
+          </div>
+
+
+
+
+          <div class="service-card">
+            <img src="svg/mouth.svg" alt="Dental Implants" />
+            <h3>Dental Implants</h3>
+            <p>Restore missing teeth with natural-looking, durable implants.</p>
+          </div>
+
+
+ <div class="service-card">
+<img src="svg/warning.svg" alt="Emergency Care" />
+            <h3>Emergency Care</h3>
+            <p>Quick relief for unexpected dental emergencies.</p>
+          </div>
+ 
+
+          <div class="service-card">
+            <img src="svg/cleaning.svg" alt="Dental Cleaning" />
+            <h3>Dental Cleaning</h3>
+            <p>Maintain oral health with professional cleaning and care.</p>
+          </div><br>
+
+
+
+          <div class="service-card">
+            <img src="svg/cosmetic.svg" alt="Cosmetic Dentistry" />
+            <h3>Cosmetic Dentistry</h3>
+            <p>Enhance your smile with veneers, bonding, and more.</p>
+          </div>
+
+
+         <div class="service-card">
+  <img src="svg/brackets.svg" alt="Orthodontics" />
+            <h3>Orthodontics</h3>
+            <p>Align your teeth with modern braces and clear aligners.</p>
+          </div>
+          
+        </div>
+      </section>
+
+
+
+
+
+      <section class="cta">
+        <h2>Ready to Transform Your Smile?</h2>
+        <p>
+          Contact us today to schedule your appointment or learn more about our
+          services.
+        </p>
+        <a href="appointments.html" class="btn-primary">Book Now</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-info">
+          <h3>MR. Dentist</h3>
+          <p>
+            Your trusted dental clinic for professional care. We offer a variety
+            of dental services, including routine check-ups, cleanings, and
+            cosmetic dentistry.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="../dental-clinic-/contact.html">contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p><i class="fas fa-phone"></i> +01 35 554 505</p>
+          <p><i class="fas fa-envelope"></i> contact@mr-dentist.com</p>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

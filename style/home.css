@@ -1,0 +1,425 @@
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar1 {
+  background: #043959;
+  color: #fff;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  z-index: 996;
+  transition: all 0.5s;
+}
+
+#topbar1.topbar-scrolled {
+  top: -40px;
+}
+
+#topbar1 i {
+  padding-right: 10px;
+  line-height: 0;
+  padding-left: 40px;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header1 {
+  background:  #F0F8FF;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 14px 0;
+  top: 40px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 992px) {
+  #header {
+    padding: 150px 0;
+  }
+}
+
+#header1.header-scrolled {
+  top: 0;
+}
+
+#header1 .logo {
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+#header1 .logo a {
+  color: #555555;
+}
+
+#header1.logo img {
+  max-height: 45px;
+}
+
+/*
+ Appointment Button
+*/
+.appointment-btn1 {
+  margin-left: 40px;
+ 
+  background: #043959;
+  color: #fff;
+  border-radius: 5px;
+  padding: 9px 19px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.appointment-btn1:hover {
+  background: #65c9cd;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .appointment-btn {
+    
+    padding: 6px 15px;
+   margin-left: 40px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar1 {
+  padding: 0;
+  backgroun-color : black;
+}
+
+.navbar1 ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar1 li {
+  position: relative;
+}
+
+.navbar1 a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 8px 13px 33px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px ;
+  ;
+  white-space: nowrap;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navbar1 a i,
+.navbar1 a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar1 a:hover,
+.navbar1 .active,
+.navbar1 .active:focus,
+.navbar1 li:hover>a {
+  color: #043959;
+}
+
+.navbar1 .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.navbar1 .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar1 .dropdown ul a {
+  padding: 10px 20px;
+  text-transform: none;
+}
+
+.navbar1 .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar1 .dropdown ul a:hover,
+.navbar1 .dropdown ul .active:hover,
+.navbar1 .dropdown ul li:hover>a {
+  color: #043959;
+}
+
+.navbar1 .dropdown:hover>ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar1 .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar1 .dropdown .dropdown:hover>ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .navbar1 .dropdown .dropdown:hover>ul {
+    left: -100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+html{
+   
+    
+   
+}
+.body1{
+    background: #e4e9f7;
+     
+   background: url("style/background-image.jpg") no-repeat center center/cover;
+}
+
+.container header {
+    display: flex;
+   text-align : center;
+ color : #4682B4;
+}
+.container  {
+    display: flex;
+     
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+ 
+}
+.box{
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+}
+.form-box{
+    width: 450px;
+    margin: 0px 10px;
+}
+.form-box header{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #e6e6e6;
+    margin-bottom: 20px;
+  
+}
+.form-box form .field{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+
+}
+.form-box form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.btn{
+    height: 35px;
+    background: #043959;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+.btn:hover{
+    opacity: 0.82;
+}
+.submit{
+    width: 100%;
+}
+.links{
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Home */
+
+.nav1{
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 60px;
+    z-index: 100;
+    margin-top: 190px;
+
+}
+.logo1{
+font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 7px;
+    
+}
+.logo1 a{
+    text-decoration: none;
+    color: #000;
+}
+.right-links1 a{
+    padding: 0 10px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+font-size: 20px;
+
+}
+.main-box1{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+}
+
+
+main-box .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+bottom1{
+    width: 100%;
+    margin-top: 20px;
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width:840px){
+    .main-box .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+.top1 .box1{
+        margin: 10px 10px;
+    }
+.bottom1{
+        margin-top: 0;
+    }
+}
+.message{
+    text-align: center;
+    background: #f9eded;
+    padding: 15px 0px;
+    border:1px solid #699053;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+
+.box1{
+    background: #EBFEFE;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+}
